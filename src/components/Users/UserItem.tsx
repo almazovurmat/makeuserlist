@@ -15,8 +15,8 @@ const UserItem: React.FC<IProps> = ({item}) => {
                     <div className="col-sm-12">
                         <div className="card-body">
                             <h6 className="card-title">Name: {item.name} <span className={cssClassName}></span></h6>
-                            <p className="card-text small">Email: {item.email}</p>
-                            <p className="card-text">Role: {item.role}</p>
+                            <p className="card-text small">Email: <a href={`mailto: ${item.email}`}>{item.email}</a></p>
+                        <p className="card-text">Role: {item.role}</p>
                             <p className="card-text">Status: {item.active ? 'Active' : 'Inactive'}</p>
                         </div>
                     </div>

@@ -15,6 +15,7 @@ const App = () => {
         <Fragment>
             <div className="container">
                 <div className="wrap">
+                    <h1 className="text-center mb-5">Users</h1>
                     <div className="row">
                         <div className="col-5">
                             <UserForm onSubmit={addNewUser}/>

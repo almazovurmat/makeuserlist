@@ -15,7 +15,7 @@ const Users: React.FC <IProps> = ({users}) => {
                         <div className="col-sm-12">
                             <div className="card-body">
                                 <h6 className="card-title">Name: Admin <span className="status available"></span></h6>
-                                <p className="card-text small">Email: superadmin@mail.com</p>
+                                <p className="card-text small">Email: <a href="mailto:superadmin@mail.com">superadmin@mail.com</a></p>
                                 <p className="card-text">Role: Admin</p>
                                 <p className="card-text">Status: Active</p>
                             </div>
@@ -29,7 +29,7 @@ const Users: React.FC <IProps> = ({users}) => {
                         <div className="col-sm-12">
                             <div className="card-body">
                                 <h6 className="card-title">Name: User <span className="status unavailable"></span></h6>
-                                <p className="card-text small">Email: blockeduser@mail.com</p>
+                                <p className="card-text small">Email: <a href="mailto:blockeduser@mail.com">blockeduser@mail.com</a></p>
                                 <p className="card-text">Role: User</p>
                                 <p className="card-text">Status: Inactive</p>
                             </div>

@@ -32,10 +32,17 @@ const UserForm: React.FC<IProps> = ({onSubmit}) => {
 
     const onFormSubmit = (event: React.FormEvent) => {
         event.preventDefault();
+
+        if (user.name.trim() === '' || user.email.trim() === '' || user.role.trim() === '') {
+            alert('Please fill in all the fields');
+            return;
+        }
+
         onSubmit({
             id: nanoid(),
             ...user
         });
+
         setUser(initialUserState);
     };
 
